@@ -1,98 +1,9 @@
-
-<style media="screen">
-body{
-  background-color: rgb(6, 199, 162);
-  padding-top: 20px;
-}
-  li{
-    border: 2px solid rgb(38, 38, 38);
-    border-radius: 05px;
-    background-color: rgb(0, 148, 126);
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    font-family: monospace;
-    font-size: 20px;
-    color: white;
-    width: 200px;
-    text-align: center;
-  }
-  li:hover{
-    color: white;
-    border: 2px solid rgb(38, 38, 38);
-    transform:scale(1.1);
-  }
-  a{
-    text-decoration: none;
-  }
-  .buttons{
-    border: 2px solid rgb(38, 38, 38);
-    background-color: rgb(38, 38, 38);
-    text-align: center;
-  }
-  .form{
-    padding: 30px;
-    background-color: rgb(3, 187, 152);
-    text-align: center;
-  }
-  .input{
-    width: 300px;
-    height: 30px;
-    border: 2px solid rgb(66, 115, 245);
-    border-radius: 05px;
-    color: rgb(0, 175, 201);
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  input{
-    width: 300px;
-    height: 47px;
-    border: 2px solid rgb(255, 255, 255);
-    font-family: sans-serif;
-    border-radius: 05px;
-    color: rgb(92, 92, 92);
-  }
-  label{
-    font-size: 15px;
-    font-family: monospace;
-  }
-  #submit{
-    font-size: 20px;
-    background-color: rgb(0, 148, 126);
-    color: white;
-  }
-  #submit:hover{
-    font-size: 20px;
-    color: lightblue;
-    cursor: pointer;
-  }
-  .heading{
-    text-align: center;
-    font-family: monospace;
-  }
-  .current{
-    padding-top: 20px;
-    text-align: center;
-    font-family: monospace;
-  }
-  .current h1{
-    font-size: 40px;
-  }
-</style>
-<div class="buttons">
-  <ul>
-    <a href="/previous"><li>Previous</li></a>
-    <a href="/previous"><li>Missed</li></a>
-    <a href="/previous"><li>Add Challenges</li></a>
-  </ul>
-</div>
-<br>
 <div class="heading">
   <h1>Add today's Exercise</h1>
   <p></p>
 </div>
 <br>
-<div class="form" action="/excercises/add" method="POST">
+<div class="form" action="/excercises/current" method="POST">
   <label for="">Excercise</label>
   <div>
     <input class="input" type="text" placeholder="Excercise"name="exercise" value="{{excercises}}">
@@ -102,7 +13,9 @@ body{
     <input class="input" type="number" placeholder="Duration" name="duration" value="{{duration}}">
   </div>
   <br>
-  <input id="submit" type="submit">
+  <div class="submit_button">
+    <a id="submit" href="/excercise/current">Submit</a>
+  </div>
 
 </div>
 
