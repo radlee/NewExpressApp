@@ -11,7 +11,6 @@ exports.show = function (req, res, next) {
 	});
 };
 
-// No need for this maybe ?
 exports.showAdd = function(req, res){
 	res.render('add_workout');
 };

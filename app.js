@@ -6,6 +6,7 @@ var myConnection = require('express-myconnection')
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
 var workouts = require('./routes/workouts');
+var current = require('./routes/current');
 
 var app = express();
 
@@ -44,8 +45,11 @@ app.get('/', function(req, res, next){
 });
 
 app.get('/prev_workouts', workouts.show);
-app.get('/add_workouts/add', workouts.showAdd);
-app.get('/workouts/add', workouts.add);
+app.get('/add_workout/add', workouts.showAdd);
+app.post('/add_workout/add', workouts.add);
+
+app.get('/current', current.show);
+// app.get('/current/add', current.add);
 
 
 // app.get('/workouts/current', function(req, res, next){
