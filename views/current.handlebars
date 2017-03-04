@@ -1,10 +1,16 @@
 <div class="current">
 <h1>Current Excercise</h1>
 <br>
-<h3>Work Out : Running</h3>
-<h3>Duration : 1h:00</h3>
-<form action="/excercise/current" method="POST">
-<button type="button" name="button">Submit</button>
+{{#workouts}}
+<h3>Work Out : {{workout}}</h3>
+<h3>Duration : {{duration}}</h3>
+{{/workouts}}
+
 <button type="button" name="button">Cancel</button>
-</form>
+
+
+<!-- Enable when Comfortable with Everything to reset or Submit the current challenge -->
+<!-- <form action="/excercise/current" method="POST"> -->
+<!-- <button type="button" name="button">Submit</button> -->
+<!-- </form> -->
 </div>

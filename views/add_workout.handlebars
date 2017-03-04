@@ -1,0 +1,23 @@
+<div class="heading">
+  <h1>Add today's Exercise</h1>
+  <p></p>
+</div>
+<br>
+<form action="/current/add" method="POST">
+<div class="">
+  <label for="">Date</label>
+    <input class="input" type="text" placeholder="Date" name="the_date" value="{{the_date}}">
+</div>
+<div class="">
+  <label for="">Excercise</label>
+    <input class="input" type="text" placeholder="Excercise"name="workout" value="{{workout}}">
+</div>
+  <div>
+    <label for="">Duration</label>
+    <input class="input" type="number" placeholder="Duration" name="duration" value="{{duration}}">
+  </div>
+  <br>
+  <div class="submit_button">
+    <input id="submit" type="submit">
+  </div>
+</form>

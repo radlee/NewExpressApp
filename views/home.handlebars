@@ -1,25 +1,10 @@
-<div class="heading">
-  <h1>Add today's Exercise</h1>
-  <p></p>
-</div>
-<br>
-<div class="form" action="/excercises/current" method="POST">
-  <label for="">Excercise</label>
-  <div>
-    <input class="input" type="text" placeholder="Excercise"name="exercise" value="{{excercises}}">
-  </div>
-    <label for="">Duration</label>
-  <div>
-    <input class="input" type="number" placeholder="Duration" name="duration" value="{{duration}}">
-  </div>
-  <br>
-  <div class="submit_button">
-    <a id="submit" href="/excercise/current">Submit</a>
-  </div>
-
-</div>
-
 <div class="current">
-  <h1>Day # 1 </h1>
-  <h3>12-December 2013</h3>
+
+<h1>Home</h1>
+
+<a href="/workouts/add">Add</a>
+
+<a href="/workouts/edit/{{id}}">Edit</a>
+<a href="/workouts/delete/{{id}}">Delete</a>
+
 </div>
