@@ -2,6 +2,14 @@ body{
   background-color: rgb(6, 199, 162);
   padding-top: 1px;
 }
+.clock{
+  border: 20px solid rgb(19, 19, 19);
+  height: 150px;
+  width: 300px;
+  background-color: rgba(55, 44, 1, 0.51);
+  margin: auto;
+  padding-top: 20px;
+}
 .container{
   font-family: arial;
   line-height: 2rem;

@@ -10,15 +10,19 @@ exports.show = function (req, res, next) {
       });
 	});
 };
-
 exports.showAdd = function(req, res){
 	res.render('add_workout');
 };
+
 
 exports.add = function (req, res, next){
 	req.getConnection(function(err, connection){
 			if(err) return next(err);
 			var input = req.body;
+			if(input.duration > 0){
+				console.log("Fix Moment----------------");
+			}
+
 			var data = {
 				the_date : input.the_date,
 				workout : input.workout,

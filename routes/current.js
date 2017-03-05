@@ -11,25 +11,6 @@ exports.show = function(req, res, next){
   });
 };
 
-
-// No need for this maybe ?
 exports.showAdd = function(req, res){
-	res.render('add_workout');
+	res.render('current');
 };
-
-exports.add = function (req, res, next){
-	req.getConnection(function(err, connection){
-			if(err) return next(err);
-			var input = req.body;
-			var data = {
-				the_date : input.the_date,
-				workout : input.workout,
-				duration : input.duration
-			}
-
-		connection.query('INSERT INTO current set ?', data, function(err, results){
-			if(err) return next(err);
-			res.redirect('/current');
-		})
-	})
-}

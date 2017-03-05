@@ -7,8 +7,11 @@ var bodyParser = require('body-parser');
 var mysql = require('mysql');
 var workouts = require('./routes/workouts');
 var current = require('./routes/current');
+var moment = require('moment');
 
 var app = express();
+var moment = require('moment');
+moment().format();
 
 //My SQL ------------------------------------
 var dbOptions ={
@@ -18,6 +21,7 @@ var dbOptions ={
  port : 3306,
   database : 'my_db'
 };
+
 // connection.connect();
 // END MYSQL ----------------------------------
 
@@ -49,7 +53,7 @@ app.get('/add_workout/add', workouts.showAdd);
 app.post('/add_workout/add', workouts.add);
 
 app.get('/current', current.show);
-// app.get('/current/add', current.add);
+app.get('/current/add', current.showAdd);
 
 
 // app.get('/workouts/current', function(req, res, next){

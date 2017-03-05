@@ -3,6 +3,20 @@
 <head>
   <!-- <meta charset="utf-8"> -->
   <title>100ActiveDays1.1.0</title>
+  <script src="/js/moment.js"></script>
+  <script src="/js/jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var now = moment();
+
+      var current_date = now.format('LL');
+      var curent_time = now.format('LTS');
+
+      $('#date').text(current_date);
+      $('#time').text(curent_time);
+    });
+  </script>
+
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
@@ -20,10 +34,13 @@
   <div class="container">
   {{{body}}}
   </div>
-  <div class="current">
-    <h1>Day # 1 </h1>
-    <h3>12-December 2013</h3>
 
+  <div class="current">
+    <div class="clock">
+      <h2 id="date"></h2>
+      <h1 id="time"></h1>
+    </div>
   </div>
+
 </body>
 </html>
