@@ -1,16 +1,24 @@
 # NewExpressApp
 
+An Express web application as a 1st challenge from mLab. The first project was an express app and
+it was a framework based web app. It was bootstrapped. This is the 1st Express WebApp that is
+purely written in HTML & CSS and JavaScript.
 
-#Install node_modules and start the app
+I need help with making the hours and minutes have the zero next to them when the number is less than 9.
 
-`npm install`
 
-##Start
+#Install node modules
 
-`node app.js`
+`$ npm install`
 
-##For Easy restarts install nodemon
+##Start the Server
 
- `npm install nodemon`
+`$ node app.js`
 
-`nodemon`
+##For easy restarts install nodemon
+
+ `$ npm install nodemon`
+
+`$ nodemon`
+
+If you have any problems please add an issue and mention me in it and I will be there to help
