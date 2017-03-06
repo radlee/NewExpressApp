@@ -6,6 +6,9 @@ purely written in HTML & CSS and JavaScript.
 
 I need help with making the hours and minutes have the zero next to them when the number is less than 9.
 
+##Clone the repository to your local machine
+
+`$ git clone https://github.com/radlee/newExpressApp.git`
 
 #Install node modules
 
