@@ -1,4 +1,4 @@
-# NewExpressApp
+# 100ActiveDays
 
 An Express web application as a 1st challenge from mLab. The first project was an express app and
 it was a framework based web app. It was bootstrapped. This is the 1st Express WebApp that is
@@ -24,4 +24,4 @@ I need help with making the hours and minutes have the zero next to them when th
 
 `$ nodemon`
 
-If you have any problems please add an issue and mention me in it and I will be there to help
+If you have any problems please add an issue and mention me on it
