@@ -1,6 +1,9 @@
 body{
   /*background-color: white;*/
-  background-color: rgb(6, 199, 162);
+  /*background-color: #4D6DC3 !important;*/
+  background-image: linear-gradient(to bottom, #F92850 0%, #6D0515 100%);
+  height:859px;
+  /*background: url("../img/bg201.png");*/
   padding-top: 1px;
 }
 .brand{
