@@ -33,5 +33,9 @@ exports.add = function (req, res, next){
 			if(err) return next(err);
 			res.redirect('/current');
 		})
+		connection.query('INSERT INTO workouts set ?', data, function(err, results){
+			if(err) return next(err);
+			next();
+		})
 	})
 }

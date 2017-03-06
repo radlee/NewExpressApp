@@ -5,7 +5,7 @@
   <title>100ActiveDays1.1.0</title>
   <script src="/js/moment.js"></script>
   <script src="/js/jquery.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     $(document).ready(function(){
       var now = moment();
 
@@ -15,8 +15,18 @@
       $('#date').text(current_date);
       $('#time').text(curent_time);
     });
+  </script> -->
+  <script type="text/javascript">
+    var myVar = setInterval(myTimer, 1000);
+    function myTimer(){
+      var d = new Date();
+      document.getElementById("time").innerHTML = d.toLocaleTimeString();
+      document.getElementById("date").innerHTML = d.toDateString();
+      document.getElementById("hours").innerHTML = d.getHours();
+      document.getElementById("minitues").innerHTML = d.getMinutes();
+      document.getElementById("seconds").innerHTML = d.getSeconds();
+    }
   </script>
-
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
@@ -24,10 +34,11 @@
   <div class="buttons">
     <ul>
       <a id="home" href="/"><li>100<span style="color:rgb(242, 216, 8)">Active</span>Days</li></a>
-      <a href="/prev_workouts"><li>Previous</li></a>
-      <a href="/missed"><li>Missed</li></a>
-      <a href="/challenges"><li>Add Challenges</li></a>
-      <a href="/current"><li>Current Workout</li></a>
+      <a  href="/prev_workouts"><li>Previous</li></a>
+      <a class="right" href="/missed"><li>Missed</li></a>
+      <a class="right" href="/challenges"><li>Add Challenges</li></a>
+      <a class="right" href="/current"><li>Current Workout</li></a>
+      <a class="right" href="/events"><li>Race Events</li></a>
     </ul>
   </div>
   <br>
@@ -37,8 +48,8 @@
 
   <div class="current">
     <div class="clock">
-      <h2 id="date"></h2>
       <h1 id="time"></h1>
+      <h3 style="color:white" id="date"></h3>
     </div>
   </div>
 

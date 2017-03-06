@@ -47,6 +47,9 @@ function errorHandler(err, req, res, next){
 app.get('/', function(req, res, next){
   res.render('home');
 });
+app.get('/events', function(req, res, next){
+  res.render('events');
+});
 
 app.get('/prev_workouts', workouts.show);
 app.get('/add_workout/add', workouts.showAdd);

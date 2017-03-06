@@ -1,9 +1,9 @@
-<div class="current">
-
-<h1>Previous Exrecises</h1>
-
-{{#workouts}}
-<h2>{{the_date}} - {{workout}} - {{duration}}</h2>
-{{/workouts}}
-
+<div class="child">
+  <h1>Previous Excercises</h1>
+  {{#workouts}}
+  <h2>{{the_date}} - <span style="color:rgb(228, 227, 227)">{{workout}}</span> - {{duration}}</h2>
+  {{/workouts}}
 </div>
+{{#no_workouts}}
+<center><h2>No workouts set yet. Add Some here <a href="/add_workout/add">Add</a></h2></center>
+{{/no_workouts}}

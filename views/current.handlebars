@@ -1,16 +1,45 @@
-<div class="current">
-<h1>Current Excercise</h1>
-<br>
-{{#workouts}}
-<h3>Work Out : {{workout}}</h3>
-<h3>Duration : {{duration}}</h3>
-{{/workouts}}
+<script type="text/javascript">
+  var myVar = setInterval(myTimer, 1000);
+  function myTimer(){
+    var d = new Date();
 
-<button type="button" name="button">Cancel</button>
+    }
+    document.getElementById("time").innerHTML = d.getTime();
+    document.getElementById("date").innerHTML = d.getDate();
+    document.getElementById("hours").innerHTML = d.getUTCHours();
+    document.getElementById("minitues").innerHTML = d.getMinutes();
+    document.getElementById("seconds").innerHTML = d.getSeconds();
+  }
+</script>
+<div class="child">
+  <h1>Current Excercise</h1>
+  <br>
+  {{#workouts}}
+  <h3>Work Out : {{workout}}</h3>
+  <h3>Duration : {{duration}}</h3>
+  {{/workouts}}
+  <div class="clock-wrap">
+    <div>
+      <div class="timeWrap">
+    <button class="time" id="hours"> 0 </button> <span style="font-family:monospace; font-size: 25px; color:white">
+      <button class="labels"> HH </button>  </span>
+    </div>
 
+    <div class="timeWrap">
+    <button class="time" id="minitues"> 0 </button> <span style="font-family:monospace; font-size: 25px; color:white">
+      <button class="labels"> MM </button>  </span>
+    </div>
 
-<!-- Enable when Comfortable with Everything to reset or Submit the current challenge -->
-<!-- <form action="/excercise/current" method="POST"> -->
-<!-- <button type="button" name="button">Submit</button> -->
-<!-- </form> -->
+    <div class="timeWrap">
+    <button class="time" id="seconds"> 0 </button> <span style="font-family:monospace; font-size: 25px; color:white">
+      <button class="labels"> SS </button> </span>
+    </div>
+  </div>
+  </div>
+  <br>
+  <button id="buttons" type="button" name="button"><a href="/">Home</a></button>
+
 </div>
+{{#no_workouts}}
+<center><h2>No workouts set yet. Add Some here <a href="/add_workout/add">Add</a></h2></center>
+{{/no_workouts}}
