@@ -59,13 +59,9 @@ app.get('/current', current.show);
 app.get('/current/add', current.showAdd);
 
 
-// app.get('/workouts/current', function(req, res, next){
-//   res.render('current');
-// })
-
 
 app.use(errorHandler);
 var port = process.env.CRUD_PORT_NR || 3000;
 app.listen(port, function(){
-  console.log("Listening on port " + port);
+  console.log("http://localhost: " + port);
 })

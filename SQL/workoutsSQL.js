@@ -27,6 +27,6 @@ connection.query("SELECT * FROM workouts", function(err, results){
     console.log(err);
     return;
   }
-  console.log(results);
+  // console.log(results);
 });
 connection.end();

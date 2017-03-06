@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- <meta charset="utf-8"> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>100ActiveDays1.1.0</title>
-  <script src="/js/moment.js"></script>
   <script src="/js/jquery.js"></script>
-  <!-- <script type="text/javascript">
-    $(document).ready(function(){
-      var now = moment();
-
-      var current_date = now.format('LL');
-      var curent_time = now.format('LTS');
-
-      $('#date').text(current_date);
-      $('#time').text(curent_time);
-    });
-  </script> -->
   <script type="text/javascript">
     var myVar = setInterval(myTimer, 1000);
     function myTimer(){
@@ -28,11 +17,15 @@
     }
   </script>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="shortcut icon" href="/img/100png.png" />
 </head>
 <body>
   <!-- Navigation Bar -->
   <div class="buttons">
     <ul>
+      <div class="brand">
+      <img src="/img/100png.png" height="70px" with="70px" alt="" />
+      </div>
       <a id="home" href="/"><li>100<span style="color:rgb(242, 216, 8)">Active</span>Days</li></a>
       <a  href="/prev_workouts"><li>Previous</li></a>
       <a class="right" href="/missed"><li>Missed</li></a>
@@ -45,13 +38,11 @@
   <div class="container">
   {{{body}}}
   </div>
-
   <div class="current">
     <div class="clock">
       <h1 id="time"></h1>
       <h3 style="color:white" id="date"></h3>
     </div>
   </div>
-
 </body>
 </html>
