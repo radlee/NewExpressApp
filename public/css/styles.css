@@ -9,7 +9,6 @@ body{
 .submit_button #submit{
   background-color: rgb(148, 10, 31);
   color: rgb(255, 255, 255);
-
 }
 #time{
   color: rgb(249, 240, 171);
@@ -19,14 +18,13 @@ body{
   margin-top: -10px;
   height: 100%;
 }
-
 .clock{
   border: 20px solid rgb(249, 240, 171);
-height: 150px;
-width: 300px;
-background-color: rgba(0, 0, 0, 0.51);
-margin: auto;
-padding-top: 20px;
+  height: 150px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.51);
+  margin: auto;
+  padding-top: 20px;
 }
 .time{
   border: 1px solid white;
@@ -39,13 +37,11 @@ padding-top: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-
 .container{
   font-family: arial;
   line-height: 2rem;
   font-size: 15px;
 }
-
 #home{
   /*float: left;*/
   font-family: monospace;
@@ -56,182 +52,179 @@ padding-top: 20px;
 #date{
   color: white;
 }
-
-
-  li{
-    border: 3px solid rgb(38, 38, 38);
-    border-radius: 05px;
-    background-color: rgb(38, 38, 38);
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    font-family: monospace;
-    font-size: 20px;
-    color: white;
-    width: 200px;
-    text-align: center;
-  }
-  .clock-wrap .timeWrap{
-    border-radius: 05px;
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    font-family: monospace;
-    font-size: 20px;
-    color: white;
-    width: 20%;
-    background-color:rgb(31, 31, 31);
-    text-align: center;
-  }
-  .colons{
-    display: inline-block;
-
-    font-family: monospace;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-  }
-   .time{
-     border: 3px solid rgb(255, 255, 255);
-border-radius: 05px;
-background-color: rgba(255, 255, 255, 1);
-list-style: none;
-display: inline-block;
-padding: 10px;
-font-family: monospace;
-font-size: 20px;
-color: rgb(31, 31, 31) !important;
-width: 60px;
-text-align: center;
-  }
-   .labels{
-     border: 3px solid rgb(255, 255, 255);
-border-radius: 05px;
-background-color: rgb(31, 31, 31);
-list-style: none;
-display: inline-block;
-padding: 10px;
-font-family: monospace;
-font-size: 20px;
-color: white !important;
-width: 60px;
-text-align: center;
-  }
-  li:hover{
-    color: rgb(17, 210, 249);
-    border: 2px solid rgb(17, 210, 249);
-    transform:scale(1.1);
-  }
-  a{
-    text-decoration: none;
-  }
-  .buttons{
-    border: 2px solid rgb(38, 38, 38);
-    background-color: rgb(38, 38, 38);
-    text-align: center;
-  }
-  .form{
-    padding: 30px;
-    background-color: rgb(3, 187, 152);
-    text-align: center;
-  }
-  .input{
-    width: 300px;
-    height: 30px;
-    border: 2px solid rgb(66, 115, 245);
-    border-radius: 05px;
-    color: rgb(145, 145, 145);
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  input{
-    width: 300px;
-    height: 47px;
-    border: 2px solid rgb(255, 255, 255);
-    font-family: sans-serif;
-    border-radius: 05px;
-    color: rgb(92, 92, 92);
-  }
-  label{
-    font-size: 15px;
-    font-family: monospace;
-  }
-  .submit_button a{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 300px;
-    height: 47px;
-    border: 2px solid rgb(255, 255, 255);
-    font-family: sans-serif;
-    border-radius: 05px;
-    font-size: 20px;
-    background-color: rgb(0, 148, 126);
-    color: white;
-  }
+li{
+  border: 3px solid rgb(38, 38, 38);
+  border-radius: 05px;
+  background-color: rgb(38, 38, 38);
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+  width: 200px;
+  text-align: center;
+}
+.clock-wrap .timeWrap{
+  border-radius: 05px;
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+  width: 20%;
+  background-color:rgb(31, 31, 31);
+  text-align: center;
+}
+.colons{
+  display: inline-block;
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.time{
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 05px;
+  background-color: rgba(255, 255, 255, 1);
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 20px;
+  color: rgb(31, 31, 31) !important;
+  width: 60px;
+  text-align: center;
+}
+.labels{
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 05px;
+  background-color: rgb(31, 31, 31);
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 20px;
+  color: white !important;
+  width: 60px;
+  text-align: center;
+}
+li:hover{
+  color: rgb(17, 210, 249);
+  border: 2px solid rgb(17, 210, 249);
+  transform:scale(1.1);
+}
+a{
+  text-decoration: none;
+}
+.buttons{
+  border: 2px solid rgb(38, 38, 38);
+  background-color: rgb(38, 38, 38);
+  text-align: center;
+}
+.form{
+  padding: 30px;
+  background-color: rgb(3, 187, 152);
+  text-align: center;
+}
+.input{
+  width: 300px;
+  height: 30px;
+  border: 2px solid rgb(66, 115, 245);
+  border-radius: 05px;
+  color: rgb(145, 145, 145);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+input{
+  width: 300px;
+  height: 47px;
+  border: 2px solid rgb(255, 255, 255);
+  font-family: sans-serif;
+  border-radius: 05px;
+  color: rgb(92, 92, 92);
+}
+label{
+  font-size: 15px;
+  font-family: monospace;
+}
+.submit_button a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 300px;
+  height: 47px;
+  border: 2px solid rgb(255, 255, 255);
+  font-family: sans-serif;
+  border-radius: 05px;
+  font-size: 20px;
+  background-color: rgb(0, 148, 126);
+  color: white;
+}
 .submit_button a:hover{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 300px;
-    height: 47px;
-    border: 2px solid rgb(255, 255, 255);
-    font-family: sans-serif;
-    border-radius: 05px;
-    font-size: 20px;
-    color: lightblue;
-    cursor: pointer;
-  }
-  #buttons{
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.07);
-    padding-left: 20px;
-    font-family: monospace;
-    font-size: 15px;
-    padding-right: 20px;
-    color: white !important;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  #buttons a:visited{
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.07);
-    padding-left: 20px;
-    font-family: monospace;
-    font-size: 15px;
-    padding-right: 20px;
-    color: white;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-   a:visited{
-    color: white;
-  }
-  #buttons a:hover{
-    color: lightblue;
-  }
-  .clock-wrap{
-    border: 10px solid rgb(31, 31, 31);
-    padding: 10px;
-    width: 50%;
-    margin: auto;
-  }
-  .heading{
-    text-align: center;
-    font-family: monospace;
-  }
-  .child{
-    padding-top: 20px;
-    text-align: center;
-    font-family: monospace;
-  }
-  .current{
-    padding-top: 20px;
-    text-align: center;
-    font-family: monospace;
-  }
-  .current h1{
-    font-size: 40px;
-  }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 300px;
+  height: 47px;
+  border: 2px solid rgb(255, 255, 255);
+  font-family: sans-serif;
+  border-radius: 05px;
+  font-size: 20px;
+  color: lightblue;
+  cursor: pointer;
+}
+#buttons{
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.07);
+  padding-left: 20px;
+  font-family: monospace;
+  font-size: 15px;
+  padding-right: 20px;
+  color: white !important;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#buttons a:visited{
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.07);
+  padding-left: 20px;
+  font-family: monospace;
+  font-size: 15px;
+  padding-right: 20px;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+a:visited{
+  color: white;
+}
+#buttons a:hover{
+  color: lightblue;
+}
+.clock-wrap{
+  border: 10px solid rgb(31, 31, 31);
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+}
+.heading{
+  text-align: center;
+  font-family: monospace;
+}
+.child{
+  padding-top: 20px;
+  text-align: center;
+  font-family: monospace;
+}
+.current{
+  padding-top: 20px;
+  text-align: center;
+  font-family: monospace;
+}
+.current h1{
+  font-size: 40px;
+}
