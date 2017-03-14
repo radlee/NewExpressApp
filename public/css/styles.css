@@ -112,8 +112,8 @@ li{
 }
 li:hover{
   color: rgb(17, 210, 249);
-  border: 2px solid rgb(17, 210, 249);
-  transform:scale(1.1);
+  /*border: 1px solid rgb(17, 210, 249);
+  transform:scale(1.1);*/
 }
 a{
   text-decoration: none;

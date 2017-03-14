@@ -9,11 +9,9 @@
     var myVar = setInterval(myTimer, 1000);
     function myTimer(){
       var d = new Date();
+
       document.getElementById("time").innerHTML = d.toLocaleTimeString();
       document.getElementById("date").innerHTML = d.toDateString();
-      document.getElementById("hours").innerHTML = d.getHours();
-      document.getElementById("minitues").innerHTML = d.getMinutes();
-      document.getElementById("seconds").innerHTML = d.getSeconds();
     }
   </script>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
