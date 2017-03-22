@@ -2,7 +2,6 @@
   var myVar = setInterval(myTimer, 1000);
   function myTimer(){
     var d = new Date();
-
     document.getElementById("time").innerHTML = d.toLocaleTimeString();
     document.getElementById("date").innerHTML = d.toDateString();
     document.getElementById("hours").innerHTML = d.getHours();
@@ -10,7 +9,8 @@
     document.getElementById("seconds").innerHTML = d.getSeconds();
   }
 </script>
-<div class="child">
+
+<div clidass="child">
   <h1>Current Excercise</h1>
   <br>
   {{#workouts}}
@@ -37,7 +37,7 @@
   </div>
   <br>
   <button id="buttons" type="button" name="button"><a href="/">Home</a></button>
-
+  
 </div>
 {{#no_workouts}}
 <center><h2>No workouts set yet. Add Some here <a href="/add_workout/add">Add</a></h2></center>

@@ -1,4 +1,14 @@
 <div class="child">
+  <h1 id="day_number"></h1>
+
+
+  {{#key}}
+<h2> DayNumber : {{dayNumber}} </h2>
+<h2> Today : {{toDay}} </h2>
+<h2> Minutes : {{this_minute}}</h2>
+<h2> End Day : {{endDay}}</h2>
+{{/key}}
+
   <h1>Home</h1>
   <button id="buttons" type="button" name="button"><a href="/add_workout/add">Add Workout</a></button>
   <!-- <button id="buttons" type="button" name="button"><a href="/workouts/edit/{{id}}">Edit</a></button>

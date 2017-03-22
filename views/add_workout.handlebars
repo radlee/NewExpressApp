@@ -9,15 +9,15 @@
   </div>
   <label for="">Excercise</label>
   <div class="">
-    <input class="input" type="text" placeholder="Excercise"name="workout" value="{{workout}}">
+    <input class="input" type="text" id="work_out" placeholder="Excercise"name="workout" value="{{workout}}">
   </div>
   <label for="">Duration</label>
   <div>
-    <input class="input" type="time" placeholder="Duration - Accepted Format : 2.30 for 2 and 1/2 hours ect.." name="duration" value="{{duration}}">
+    <input class="input" type="time" id="w_duration" placeholder="Duration - Accepted Format : 2.30 for 2 and 1/2 hours ect.." name="duration" value="{{duration}}">
   </div>
   <br>
   <div class="submit_button">
-    <input id="submit" type="submit">
+    <input id="submit" type="submit" onclick="calculateDays()">
   </div>
 </form>
 </div>
