@@ -1,5 +1,6 @@
 //Import node_modules and your routes/functions
 var express = require('express');
+var cool = require('cool-ascii-faces');
 var exphbs = require('express-handlebars');
 var myConnection = require('express-myconnection')
 var bodyParser = require('body-parser');

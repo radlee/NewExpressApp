@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.0",
+    "cool-ascii-faces": "1.3.4",
     "express": "^4.15.0",
     "express-flash": "git://github.com/RGBboy/express-flash.git",
     "express-handlebars": "^3.0.0",
