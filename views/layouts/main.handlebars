@@ -3,17 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100ActiveDays1.1.0</title>
+  <title>Lolito</title>
   <script src="/js/jquery.js"></script>
-  <script type="text/javascript">
-    var myVar = setInterval(myTimer, 1000);
-    function myTimer(){
-      var d = new Date();
 
-      document.getElementById("time").innerHTML = d.toLocaleTimeString();
-      document.getElementById("date").innerHTML = d.toDateString();
-    }
-  </script>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <link rel="shortcut icon" href="/img/100png.png" />
 </head>
@@ -24,12 +16,8 @@
       <div class="brand">
       <img src="/img/100png.png" height="70px" with="70px" alt="" />
       </div>
-      <a id="home" href="/"><li>100<span style="color:rgb(242, 216, 8)">Active</span>Days</li></a>
-      <a  href="/prev_workouts"><li>Previous</li></a>
-      <a class="right" href="/missed"><li>Missed</li></a>
-      <a class="right" href="/challenges"><li>Add Challenges</li></a>
-      <a class="right" href="/current"><li>Current Workout</li></a>
-      <a class="right" href="/events"><li>Race Events</li></a>
+      <a id="home" href="/"><li>General<span style="color:rgb(242, 216, 8)">Lee</span>Online</li></a>
+      <a class="right" href="/blog"><li>Blog</li></a>
     </ul>
   </div>
   <br>
@@ -38,14 +26,6 @@
   <div class="container">
   {{{body}}}
   </div>
-  <div class="current">
-    <div class="clock">
-      <h1 id="time"></h1>
-      <h3 style="color:white" id="date"></h3>
-    </div>
-  </div>
+
 </body>
-<script src="/js/countDays.js"></script>
-
-
 </html>
